@@ -1,0 +1,23 @@
+/** Customize Element Plus styles */
+
+// sheet
+.el-table {
+  // header
+  th.el-table__cell {
+    background-color: var(--el-fill-color-light) !important;
+  }
+}
+
+// pagination
+.el-pagination {
+  // Refer to Bootstrap's responsive design WIDTH = 768
+  @media screen and (max-width: 768px) {
+    .el-pagination__total,
+    .el-pagination__sizes,
+    .el-pagination__jump,
+    .btn-prev,
+    .btn-next {
+      display: none !important;
+    }
+  }
+}
